@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		body{background:#D3D7D8;margin: 0;
+			padding: 0;}
+		.box{width:200px;
+		     height: 200px;
+		     position: absolute;
+		      top: 50%;
+		      right: 32%;
+		      transform: translate(-50%,-50%);
+		      //overflow: hidden;}
+		.box .b{
+		       border-radius: 50%;
+		       border-left: 4px solid ;
+		       border-right: 4px solid ;
+		       border-top: 4px solid transparent !important;
+		       border-bottom: 4px solid  transparent !important;;
+		      position: absolute;
+		      top: 50%;
+		      //right: 50%;
+		      transform: translate(-50%,-50%);
+		       animation: ro 1s infinite;}
+		.box .b1{border-color:#B4AE0C;
+		         width:120px;
+		         height: 120px;}
+		.box .b2{border-color:#E0960C;
+		         width:100px;
+		         height: 100px;
+		animation-delay: .2s}
+		.box .b3{border-color:#5216E4;
+		         width:80px;
+		         height: 80px;
+		animation-delay: .4s}
+		.box .b4{border-color:#257C18;
+		         width:60px;
+		         height: 60px;
+		animation-delay: .6s;}
+		@keyframes ro{
+			0%{transform: translate(-50%,-50%) rotate(0deg)}
+			50%{transform: translate(-50%,-50%) rotate(-180deg)}
+			100%{transform: translate(-50%,-50%) rotate(-360deg)}
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class=" b b1"></div>
+		<div class=" b b2"></div>
+		<div class=" b b3"></div>
+		<div class=" b b4"></div>
+	</div>
+</body>
+</html>
